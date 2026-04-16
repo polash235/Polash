@@ -1,122 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Polash Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="UTF-8">
+  <title>My Wapka Style Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: #f1f1f1;
+      background: #111;
+      color: #fff;
+      text-align: center;
     }
 
-    .header {
-      background: #1877f2;
-      color: white;
+    header {
+      background: #00bcd4;
       padding: 15px;
-      text-align: center;
       font-size: 20px;
+      font-weight: bold;
     }
 
-    .menu {
-      padding: 10px;
-    }
-
-    .menu a {
-      display: block;
-      background: #ddd;
-      padding: 12px;
-      margin: 8px 0;
-      text-decoration: none;
-      color: black;
-      border-radius: 8px;
-    }
-
-    .menu a:hover {
-      background: #ccc;
-    }
-
-    .content {
-      background: white;
+    .box {
       margin: 10px;
       padding: 15px;
-      border-radius: 10px;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 10px;
-      background: #ddd;
-      margin-top: 20px;
-    }
-
-    button {
-      margin: 10px;
-      padding: 10px;
-      border: none;
-      background: black;
-      color: white;
+      background: #222;
       border-radius: 8px;
     }
 
-    /* 🌙 Dark Mode */
-    .dark {
-      background: #121212;
-      color: white;
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
     }
 
-    .dark .header {
-      background: black;
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      background: #000;
+      font-size: 14px;
     }
-
-    .dark .menu a {
-      background: #333;
-      color: white;
-    }
-
-    .dark .content {
-      background: #1e1e1e;
-    }
-
-    .dark .footer {
-      background: black;
-    }
-
   </style>
 </head>
 
 <body>
 
-<div class="header">
-  🔥 Polash Wapka Site
+<header>
+  My Movie Site
+</header>
+
+<div class="box">
+  <h3>🔥 Latest Movies</h3>
+  <a href="#">Movie 1 Download</a>
+  <a href="#">Movie 2 Download</a>
+  <a href="#">Movie 3 Download</a>
 </div>
 
-<!-- 🌙 Dark Button -->
-<button onclick="toggleDark()">🌙 Dark Mode</button>
-
-<div class="menu">
-  <a href="index.html">🏠 Home</a>
-  <a href="movies.html">🎬 Movies</a>
-  <a href="#">📱 Apps</a>
-  <a href="#">🎵 Music</a>
-  <a href="#">📥 Download</a>
+<div class="box">
+  <h3>📂 Categories</h3>
+  <a href="#">Action</a>
+  <a href="#">Romance</a>
+  <a href="#">Drama</a>
 </div>
 
-<div class="content">
-  <h3>Welcome 👋</h3>
-  <p>এটা আমার Wapka style website 🚀</p>
-</div>
+<footer>
+  © 2026 My Site
+</footer>
 
-<div class="footer">
-  © 2026 design by polash
-</div>
-
-<script>
-function toggleDark() {
-  document.body.classList.toggle("dark");
-
-</script>
-
+</body>
 </html>
-
