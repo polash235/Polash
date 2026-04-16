@@ -2,61 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Wapka Style Site</title>
+  <title>My Movie Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: #111;
+      background: #0d0d0d;
       color: #fff;
-      text-align: center;
     }
 
     header {
-      background: #00bcd4;
+      background: linear-gradient(45deg, #00bcd4, #0097a7);
       padding: 15px;
-      font-size: 20px;
+      text-align: center;
+      font-size: 22px;
       font-weight: bold;
     }
 
-    .box {
-      margin: 10px;
-      padding: 15px;
-      background: #222;
-      border-radius: 8px;
+    .container {
+      padding: 10px;
     }
 
-    a {
-      color: #00bcd4;
-      text-decoration: none;
-      display: block;
+    .movie {
+      background: #1a1a1a;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .movie img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-content {
+      padding: 10px;
+    }
+
+    .movie h3 {
       margin: 5px 0;
     }
 
+    .btn {
+      display: inline-block;
+      padding: 10px;
+      background: #00bcd4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 8px;
+    }
+
     footer {
-      margin-top: 20px;
+      text-align: center;
       padding: 10px;
       background: #000;
-      font-size: 14px;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  My Movie Site
-</header>
+<header>🎬 My Movie Site</header>
 
-<div class="box">
-  <h3>🔥 Latest Movies</h3>
-  <a href="movie1.html">Movie 1 Download</a>
-  <a href="#">Movie 2 Download</a>
-  <a href="#">Movie 3 Download</a>
+<div class="container">
+
+  <div class="movie">
+    <img src="https://via.placeholder.com/300x400">
+    <div class="movie-content">
+      <h3>Movie 1</h3>
+      <p>720p | 800MB</p>
+      <a class="btn" href="movie1.html">Download</a>
+    </div>
+  </div>
+
+  <div class="movie">
+    <img src="https://via.placeholder.com/300x400">
+    <div class="movie-content">
+      <h3>Movie 2</h3>
+      <p>1080p | 1.2GB</p>
+      <a class="btn" href="#">Download</a>
+    </div>
+  </div>
+
 </div>
 
-<div class="box">
-  <h3>📂 Categorie
+<footer>© 2026 My Site</footer>
+
+</body>
 </html>
