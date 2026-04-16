@@ -3,6 +3,7 @@
 <head>
   <title>Polash Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       margin: 0;
@@ -11,7 +12,7 @@
     }
 
     .header {
-      background: #0d6efd;
+      background: #1877f2;
       color: white;
       padding: 15px;
       text-align: center;
@@ -19,32 +20,28 @@
     }
 
     .menu {
-      background: #fff;
       padding: 10px;
-      margin: 10px;
-      border-radius: 5px;
     }
 
     .menu a {
       display: block;
-      padding: 10px;
-      margin: 5px 0;
-      background: #e9ecef;
+      background: #ddd;
+      padding: 12px;
+      margin: 8px 0;
       text-decoration: none;
       color: black;
-      border-radius: 5px;
+      border-radius: 8px;
     }
 
     .menu a:hover {
-      background: #0d6efd;
-      color: white;
+      background: #ccc;
     }
 
     .content {
-      background: #fff;
+      background: white;
       margin: 10px;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 15px;
+      border-radius: 10px;
     }
 
     .footer {
@@ -53,6 +50,39 @@
       background: #ddd;
       margin-top: 20px;
     }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    /* 🌙 Dark Mode */
+    .dark {
+      background: #121212;
+      color: white;
+    }
+
+    .dark .header {
+      background: black;
+    }
+
+    .dark .menu a {
+      background: #333;
+      color: white;
+    }
+
+    .dark .content {
+      background: #1e1e1e;
+    }
+
+    .dark .footer {
+      background: black;
+    }
+
   </style>
 </head>
 
@@ -62,8 +92,11 @@
   🔥 Polash Wapka Site
 </div>
 
+<!-- 🌙 Dark Button -->
+<button onclick="toggleDark()">🌙 Dark Mode</button>
+
 <div class="menu">
-  <a href="#">🏠 Home</a>
+  <a href="index.html">🏠 Home</a>
   <a href="movies.html">🎬 Movies</a>
   <a href="#">📱 Apps</a>
   <a href="#">🎵 Music</a>
@@ -76,8 +109,16 @@
 </div>
 
 <div class="footer">
-  © 2026 Design By polash
+  © 2026 design by polash
 </div>
 
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
