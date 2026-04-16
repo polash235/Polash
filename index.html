@@ -115,32 +115,8 @@
 <script>
 function toggleDark() {
   document.body.classList.toggle("dark");
-}
+
 </script>
 
-
-
-</body><script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyDDrzKeVh8irR6tS6XvY0KVDniWGGXsufQ",
-    authDomain: "polashsite.firebaseapp.com",
-    databaseURL: "https://polashsite-default-rtdb.firebaseio.com/",
-    projectId: "polashsite",
-    storageBucket: "polashsite.firebasestorage.app",
-    messagingSenderId: "128802637163",
-    appId: "1:128802637163:web:9f569ffbc683b066bb782e"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-
-  // test data
-  set(ref(db, 'test/'), {
-    message: "Hello from PolashSite 🚀"
-  });
-</script>
 </html>
 
